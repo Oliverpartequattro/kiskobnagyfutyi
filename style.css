@@ -6,7 +6,7 @@ body{
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #850000;
     overflow: hidden;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -44,7 +44,6 @@ body{
 .navbar a.active {
     color: rgb(241, 196, 0);
     pointer-events: none;
-    opacity: 90%;
 }
 
 .underline{
@@ -332,15 +331,15 @@ body{
         left: 0;
     }
     25%{
-        left: 200px;
+        left: 300px;
         rotate: -25deg;
     }
     50% {
-        left: 400px; 
+        left: 500px; 
         rotate: 0deg;
     }
     75%{
-        left: 600px
+        left: 700px
     }
     100%{
         left: 1800px;
