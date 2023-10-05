@@ -255,7 +255,7 @@ body{
     width: 100px;
     height: 100px;
     position: relative;
-    animation: scooter_racse 4s linear paused; 
+    animation: scooter_racse 5s linear paused; 
 }
 
 .scooter.active{
@@ -266,7 +266,8 @@ body{
     width: 100px;
     height: 100px;
     position: relative;
-    animation: motor_racse 5s linear paused; 
+    animation: motor_racse 10s linear paused; 
+    padding-bottom: 50px;
   }
 
   .motor.active1{
@@ -332,8 +333,20 @@ body{
     0% {
         left: 0;
     }
-    100% {
-        left: 600px; 
+    25%{
+        left: 200px;
+        rotate: -25deg;
+    }
+    50% {
+        left: 400px; 
+        rotate: 0deg;
+    }
+    75%{
+        left: 600px
+    }
+    100%{
+        left: 1800px;
+        rotate: 1800deg;
     }
 }
 
