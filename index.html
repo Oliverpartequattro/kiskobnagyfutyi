@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KisKobNagyFutyi</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/vespa.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="index.html" class="title">KisKobNagyFutyi</a>
+        <a href="#" class="active">Főoldal</a>
+        <a href="#">Bemutatás</a>
+        <a href="#">Előnyok</a>
+        <a href="#">Vásárlás</a>
+        <div class="dropdown">
+            <div class="dropdown-btn">Dropdown</div>
+            <div class="dropdown-content">
+                <div class="dropdown-btn"><a href="#">Sportmotorok, ha elment az eszed</a></div>
+                <div class="dropdown-btn"><a href="#">Szervkereskedelem, ha sportmotorod van</a></div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdown.addEventListener('click', function() {
+        dropdown.classList.toggle('active');
+    });
+</script>
 </html>
