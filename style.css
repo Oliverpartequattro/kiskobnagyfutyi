@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: "Jost"; 
     background-color: #333;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -121,7 +122,6 @@ body{
     animation: motorcycle_move 10s linear infinite;
 }
 
-
 .container{
     width: 1200px;
     margin: auto;
@@ -214,8 +214,6 @@ body{
 .chart img{
     float: left; 
     margin: 5px; 
-    width: 300px; 
-    height: auto;
 }
 
 .introduction_text p{
