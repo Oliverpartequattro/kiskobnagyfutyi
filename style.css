@@ -222,6 +222,57 @@ body{
     text-align: justify;
 }
 
+.introduction img{
+    height: auto;
+    width: 100px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: rgb(241, 196, 0);
+    border-radius: 15px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 30px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .scooter {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: scooter_racse 4s linear paused; 
+}
+
+.scooter.active{
+    animation-play-state: running;
+}
+
+  .motor{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: motor_racse 5s linear paused; 
+  }
+
+  .motor.active1{
+    animation-play-state: running; 
+}
+
 @keyframes motorcycle_move {
     0% {
         left: 34%;
@@ -253,3 +304,36 @@ body{
         text-shadow: 0 0 20px rgba(241, 196, 0, 1);
     }
 }
+
+@keyframes scooter_racse {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    25% {
+        left: 800px;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 800px;
+        transform: scaleX(-1);
+    }
+    75% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes motor_racse {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 600px; 
+    }
+}
+

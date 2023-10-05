@@ -70,8 +70,9 @@
                     A robogók hatékonyságának és eszméletlen gyorsaságának szemléltetése.
                 </p>
 
-                <div class="scooter"><img src="images/kekrobogo.png" alt=""></div>
-                <div class="motorcycle"><img src="images/motor.png" alt=""></div>
+                <button class="button cartoon" role="button" onclick="startAnimation(), startAnimationMotor()">Start Animation</button>
+                <div class="scooter" id="racse"><img src="images/kekrobogo.png" alt=""></div>
+                <div class="motor" id="racse_motor"><img src="images/motor.png" alt=""></div>
             </div>
         </div>
 
@@ -89,8 +90,14 @@
 
     function startAnimation() 
     {
-        const animatedBox = document.getElementById("animatedBox");
-        animatedBox.classList.add("active"); 
+        const racse = document.getElementById("racse");
+        racse.classList.add("active"); 
+    }
+
+    function startAnimationMotor() 
+    {
+        const racse1 = document.getElementById("racse_motor");
+        racse1.classList.add("active1"); 
     }
 </script>
 
