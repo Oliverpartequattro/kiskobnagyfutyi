@@ -16,29 +16,33 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.navbar .title {
-    color: white;
-    font-size: 25px;
-    margin-right: 550px;
+.navbar .title img{
+    width: 50%;
+    height: 50%;
 }
 
-.navbar a {
+.navhover{
     color: white;
     text-decoration: none;
     padding: 14px 16px;
     margin: 5px;
     font-size: 20px;
     float: right;
+    transition: all 1s ease-in-out;
 }
 
-.navbar a:hover {
-    
-    color: aqua;
+.navhover:hover {
+    color: rgb(241, 196, 0);
+    opacity: 100%;
+    transition: 1s;
+    margin-inline: 15px;
+    font-weight: 150;
 }
 
 .navbar a.active {
-    color: rgb(245, 10, 0);
+    color: rgb(241, 196, 0);
     pointer-events: none;
+    opacity: 90%;
 }
 
 
@@ -52,6 +56,9 @@ body{
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .dropdown.active .dropdown-content {
@@ -67,6 +74,7 @@ body{
     display: block;
     color: #f1f1f1;
     font-size: 20px;
+    transition: all 1s ease-in-out;
 }
 
 .dropdown-btn a{
@@ -76,5 +84,52 @@ body{
 }
 
 .dropdown-btn:hover {
-    color: aqua;
+    color: rgb(241, 196, 0);
+    transition: 1s;
 }
+
+.dropdown-txt{
+    padding: 10px;
+}
+
+.dropdown-txt a{
+    text-decoration: none;
+    color: #333;
+    transition: all 1s ease-in-out;
+}
+
+.dropdown-txt a:hover{
+    color: rgb(241, 196, 0);
+    transition: 1s;
+}
+
+.motorcycle {
+    position: absolute;
+    left: 4%;
+    animation: moveMotorcycle 10s linear infinite;
+}
+
+@keyframes moveMotorcycle {
+    0% {
+        left: 34%;
+        transform: scaleX(1);
+    }
+    25% {
+        left: 47%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 47%;
+        transform: scaleX(-1);
+    }
+    75% {
+        left: 34%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 34%;
+        transform: scaleX(1);
+    }
+
+}
+

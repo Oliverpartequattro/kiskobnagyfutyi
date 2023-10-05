@@ -9,21 +9,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
 </head>
 <body>
+
     <div class="navbar">
-        <a href="index.html" class="title">KisKobNagyFutyi</a>
-        <a href="#" class="active">Főoldal</a>
-        <a href="#">Bemutatás</a>
-        <a href="#">Előnyok</a>
-        <a href="#">Vásárlás</a>
-        <div class="dropdown">
-            <div class="dropdown-btn">Dropdown</div>
+        <a href="index.html" class="title"><img src="images/kknflogo.png" alt=""></a>
+        <div class="motorcycle"><img src="images/mozgovespa.png" width="100px" height="100px" alt=""></div>
+        <a href="#" class="active navhover">Főoldal</a>
+        <a href="#" class="navhover">Bemutatás</a>
+        <a href="#" class="navhover">Előnyök</a>
+        <a href="#" class="navhover">Vásárlás</a>
+        <div class="dropdown navhover">
+            <div class="dropdown-btn">Társoldalak</div>
             <div class="dropdown-content">
-                <div class="dropdown-btn"><a href="#">Sportmotorok, ha elment az eszed</a></div>
-                <div class="dropdown-btn"><a href="#">Szervkereskedelem, ha sportmotorod van</a></div>
+                <div class="dropdown-txt"><a href="#">Sportmotorok, ha elment az eszed</a></div>
+                <div class="dropdown-txt"><a href="#">Szervkereskedelem, ha sportmotorod van</a></div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+
+
+
+    </div>
+
 </body>
+
 <script>
     const dropdown = document.querySelector('.dropdown');
 
@@ -31,4 +41,5 @@
         dropdown.classList.toggle('active');
     });
 </script>
+
 </html>
