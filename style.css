@@ -158,8 +158,6 @@ body{
     background-color: rgb(241, 196, 0);
     position: absolute;
     top: 50%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
 }
 
 .container .cartoon .line:first-child {
@@ -174,11 +172,6 @@ body{
     width: 800px;
     margin: auto;
     font-size: large;
-}
-
-.intrudoction_text ol{
-    width: 800px;
-    margin: auto;
 }
 
 .creator_container {
@@ -211,6 +204,22 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     animation: glowing 1.5s infinite alternate;
+}
+
+.list_title{
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.chart img{
+    float: left; 
+    margin: 5px; 
+    width: 300px; 
+    height: auto;
+}
+
+.introduction_text p{
+    text-align: justify;
 }
 
 @keyframes motorcycle_move {
