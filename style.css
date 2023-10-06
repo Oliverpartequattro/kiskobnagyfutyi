@@ -197,7 +197,7 @@ body{
 
 .glow {
     font-weight: bold;
-    color: transparent;
+    color: #f1f1f1;
     text-align: center;
     background: linear-gradient(to right, #f1c400, #f1c400, transparent, transparent, #f1c400, #f1c400);
     background-clip: text;
@@ -269,6 +269,39 @@ body{
 
   .motor.active1{
     animation-play-state: running; 
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.worker_card {
+    text-align: center;
+}
+
+.worker_card img.worker_image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.worker_name {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.worker_introduction{
+    margin-top: 5px;
+    width: 800px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 @keyframes motorcycle_move {
