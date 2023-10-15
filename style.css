@@ -355,6 +355,14 @@ body{
 }
 
 
+.zoom {
+    transition: font-size 0.3s; 
+}
+
+.zoom:hover {
+    font-size: 120%;
+    cursor: default;
+}
 
 @keyframes motorcycle_move {
     0% {
@@ -472,6 +480,7 @@ body{
         border-radius: 0%
     }
 }
+
 
 
 
