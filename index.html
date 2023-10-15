@@ -16,12 +16,11 @@
         <a href="index.html" class="active navhover underline">Főoldal</a>
         <a href="elonyok.html" class="navhover underline">Előnyök</a>
         <a href="munkatarsaink.html" class="navhover underline">Munkatársaink</a>
-        <a href="vasarlas.html" class="navhover underline">Vásárlás</a>
         <div class="dropdown navhover underline">
             <div class="dropdown_btn">Társoldalak</div>
             <div class="dropdown_content">
-                <div class="dropdown_txt"><a href="#">Sportmotorok, ha elment az eszed</a></div>
-                <div class="dropdown_txt"><a href="#">Szervkereskedelem, ha sportmotorod van</a></div>
+                <div class="dropdown_txt"><a href="https://zalan0815.github.io/sportmotor/index.html">Sportmotorok, ha elment az eszed</a></div>
+                <div class="dropdown_txt"><a href="https://sukebenedek.github.io/Web-projekt/">Szervkereskedelem, ha sportmotorod van</a></div>
             </div>
         </div>
     </div>
@@ -61,10 +60,10 @@
 
                 </div>
 
-                <h1 class="cartoon"><div class="line"></div>Alkotóink<div class="line"></div></h1>
+                <h1 class="cartoon" role="button" onclick="startAnimation(), startAnimation2()"><div class="line"></div> <span class="click" > Alkotóink </span><div class="line"></div></h1>
                 <div class="creator_container">
                     <div class="creator">
-                        <img src="images/durumtivadar.jpg" alt="Dürüm Tivadar">
+                        <img src="images/durumtivadar.jpg" alt="Dürüm Tivadar" class="dance" id="dance">
                         <div class="creator_description">
                             <p>
                                 <span class="creator_name cartoon glow"> Dürüm Tivadar </span> <br>
@@ -74,7 +73,7 @@
                     </div>
 
                     <div class="creator">
-                        <img src="images/lordrotschchildarpad.jpg" alt="Lord Rothschild Árpád">
+                        <img src="images/lordrotschchildarpad.jpg" alt="Lord Rothschild Árpád" class="dance1" id="dance1">
                         <div class="creator_description">
                             <p>
                                 <span class="creator_name cartoon glow"> Lord Rothschild Árpád </span> <br>
@@ -89,11 +88,11 @@
     </div>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>KKNF Zrt.</p>
-            <p>Iborfia, Népítélet utca 6</p>
-            <p>Email: fogatlanarpi@gmail.com</p>
-            <p>Telefon: +36 30 345 5102</p>
+        <div class="footer_content">
+            <p> <span class="glow"> KKNF Zrt. </span></p>
+            <p> <span class="glow"> Cím: </span> Iborfia, Népítélet utca 6</p>
+            <p> <span class="glow"> Email: </span> fogatlanarpi@gmail.com</p>
+            <p> <span class="glow"> Telefon: </span> +36 30 345 5102</p>
         </div>
     </footer>
     
@@ -105,6 +104,18 @@
     dropdown.addEventListener('click', function() {
         dropdown.classList.toggle('active');
     });
+
+    function startAnimation() 
+    {
+        const dance = document.getElementById("dance");
+        dance.classList.add("active"); 
+    }
+
+    function startAnimation2() 
+    {
+        const dance1 = document.getElementById("dance1");
+        dance1.classList.add("active1"); 
+    }
 </script>
 
 </html>

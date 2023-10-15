@@ -24,6 +24,10 @@ body{
     height: 50%;
 }
 
+.navbar .title img:hover{
+    animation: tilt_left 1s ease-in-out infinite alternate, tilt_light 1s ease-in-out infinite alternate;
+}
+
 .navhover{
     color: white;
     text-decoration: none;
@@ -272,7 +276,7 @@ body{
     animation-play-state: running; 
 }
 
-.grid_container {
+.grid_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -280,11 +284,11 @@ body{
     justify-content: center;
 }
 
-.worker_card {
+.worker_card{
     text-align: center;
 }
 
-.worker_card img.worker_image {
+.worker_card img.worker_image{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -292,7 +296,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.worker_name {
+.worker_name{
     font-weight: bold;
     font-size: 30px;
     margin-top: 10px;
@@ -318,9 +322,38 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.footer-content p {
+.footer_content p {
     margin: 5px 0;
 }
+
+.tilt {
+    animation: tilt_left 1s ease-in-out infinite alternate, tilt_right 1s ease-in-out infinite alternate;
+}
+
+.dance{
+    animation: dance 4s alternate infinite paused;
+    transform-origin: center;
+    margin-bottom: 50px;
+}
+
+.dance.active{
+    animation-play-state: running;
+}
+
+.dance1{
+    animation: dance 4s alternate infinite paused;
+    transform-origin: center;
+    margin-bottom: 50px;
+}
+
+.dance1.active1{
+    animation-play-state: running;
+}
+
+.click{
+    cursor: pointer;;
+}
+
 
 
 @keyframes motorcycle_move {
@@ -398,5 +431,42 @@ body{
         rotate: 1800deg;
     }
 }
+
+@keyframes tilt_left {
+    0% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes tilt_right {
+    0% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes dance{
+    0% {
+        transform: scale(1), rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(-30deg); 
+    }
+    50%{
+        transform: scale(1.2) rotate(30deg);
+    }
+    75%{
+        transform: scale(1.25) rotate(300deg);
+    }
+    100%{
+        transform: scale(1.25) rotate(-300deg);
+    }
+}
+
 
 
