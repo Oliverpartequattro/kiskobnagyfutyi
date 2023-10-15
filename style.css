@@ -343,7 +343,7 @@ body{
 .dance1{
     animation: dance 4s alternate infinite paused;
     transform-origin: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .dance1.active1{
@@ -452,19 +452,24 @@ body{
 
 @keyframes dance{
     0% {
-        transform: scale(1), rotate(0deg);
+        transform: scale(1), rotate(0deg) ;
+        border-radius: 50%;
     }
     25% {
-        transform: scale(1.1) rotate(-30deg); 
+        transform: scale(1.1) rotate(-30deg);
+        border-radius: 60% 
     }
     50%{
         transform: scale(1.2) rotate(30deg);
+        border-radius: 70%
     }
     75%{
         transform: scale(1.25) rotate(300deg);
+        border-radius: 80%
     }
     100%{
         transform: scale(1.25) rotate(-300deg);
+        border-radius: 0%
     }
 }
 
